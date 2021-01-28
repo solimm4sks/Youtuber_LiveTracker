@@ -5,7 +5,7 @@ from google.auth.transport.requests import Request
 apiKey = "YOUR_API_KEY"
 channels = [
     ("Aqua", "UC1opHUrw8rvnsadT-iGp7Cg"),
-    ("Marine", "UCCzUftO8KOVkV4wQG1vkUvg"),
+    ("Marine", "UCCzUftO8KOVkV4wQG1vkUvg"), # channel name, channel id (found in the channel url)
     ("Haachama", "UC1CfXB_kRs3C-zaeTG3oGyg"),
     ("Watame", "UCqm3BQLlJfvkTsX_hvm0UmA"),
     ("Rushia", "UCl_gCybOJRIgOXw6Qb4qJzQ"),
