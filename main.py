@@ -2,7 +2,7 @@ import os
 from googleapiclient.discovery import build
 from google.auth.transport.requests import Request
 
-apiKey = "AIzaSyBGXMVIWz3d6gHwtHu6yEAEVYTqfjOXK-g"
+apiKey = "YOUR_API_KEY"
 channels = [
     ("Aqua", "UC1opHUrw8rvnsadT-iGp7Cg"),
     ("Marine", "UCCzUftO8KOVkV4wQG1vkUvg"),
