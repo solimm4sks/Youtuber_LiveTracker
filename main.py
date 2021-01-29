@@ -2,16 +2,17 @@ import os
 from googleapiclient.discovery import build
 from google.auth.transport.requests import Request
 
-apiKey = "YOUR_API_KEY"
+apiKey = "AIzaSyBGXMVIWz3d6gHwtHu6yEAEVYTqfjOXK-g"
 channels = [
     ("Aqua", "UC1opHUrw8rvnsadT-iGp7Cg"),
-    ("Marine", "UCCzUftO8KOVkV4wQG1vkUvg"), # channel name, channel id (found in the channel url)
+    ("Marine", "UCCzUftO8KOVkV4wQG1vkUvg"),
     ("Haachama", "UC1CfXB_kRs3C-zaeTG3oGyg"),
     ("Watame", "UCqm3BQLlJfvkTsX_hvm0UmA"),
     ("Rushia", "UCl_gCybOJRIgOXw6Qb4qJzQ"),
     ("Suisei", "UC5CwaMl1eIgY8h02uZw7u8A"),
     ("Okayu", "UCvaTdHTWBGv3MKj3KVqJVCw"),
-    ("Pekora", "UC1DCedRgGHBdm81E1llLhOQ")
+    ("Pekora", "UC1DCedRgGHBdm81E1llLhOQ"),
+    ("Calliope", "UCL_qhgtOy0dy1Agp8vkySQg")
 ]
 
 youtube = build('youtube', 'v3', developerKey=apiKey)
@@ -30,6 +31,7 @@ for (key, value) in channels:
         someoneStreaming = True
     # else:
     #     print(f'{key} isnt streaming :(')
-
-print('Noone is streaming :(')
+if not someoneStreaming:
+    print('Noone is streaming :(')
+    
 input('\nPress any button to continue..')
